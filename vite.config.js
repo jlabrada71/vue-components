@@ -16,7 +16,7 @@ export default defineConfig({
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
-      entry: './src/lib/index.js',
+      entry: 'src/lib/index.js',
       name: 'labrada-components',
       // the proper extensions will be added
       fileName: 'labrada-components',
