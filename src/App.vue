@@ -1,7 +1,8 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import FIButton from './components/Button/FIButton.vue'
 </script>
 
 <template>
-  <HelloWorld msg="You did it!" />
+  <FIButton />
+  
 </template>
