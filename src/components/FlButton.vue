@@ -14,3 +14,8 @@
     ease-linear
     ">Hellow</button>
 </template>
+<script>
+export default {
+  name: 'FlButton'
+}
+</script>

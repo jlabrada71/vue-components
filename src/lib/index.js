@@ -1,12 +1,14 @@
-import * as Button from '@/components/Button'
+import components from'./components'
 
-const componentsList = Button.default
-const LabradaComponents = {
-  install(Vue) {
-    Object.keys(componentsList).forEach( name => {
-      Vue.component(name, componentsList[name])
-    })
+const plugin = {
+  install (Vue) {
+    for (const prop in components) {
+      if (components.hasOwnProperty(prop)) {
+        const component = components[prop]
+        Vue.component(component.name, component)
+      }
+    }
   }
 }
 
-export default LabradaComponents
+export default plugin
